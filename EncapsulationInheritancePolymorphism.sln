@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncapsulationInheritancePolymorphism", "EncapsulationInheritancePolymorphism\EncapsulationInheritancePolymorphism.csproj", "{DB72BFF2-90A7-481F-99A8-49ECA9DEC9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTest", "PersonTest\PersonTest.csproj", "{D9CD5403-AD59-4865-B6AD-07FF349E3191}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB72BFF2-90A7-481F-99A8-49ECA9DEC9CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB72BFF2-90A7-481F-99A8-49ECA9DEC9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB72BFF2-90A7-481F-99A8-49ECA9DEC9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB72BFF2-90A7-481F-99A8-49ECA9DEC9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CD5403-AD59-4865-B6AD-07FF349E3191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CD5403-AD59-4865-B6AD-07FF349E3191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CD5403-AD59-4865-B6AD-07FF349E3191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CD5403-AD59-4865-B6AD-07FF349E3191}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FACE2C2-7BB4-474A-A57F-F822E764ED25}
+	EndGlobalSection
+EndGlobal
