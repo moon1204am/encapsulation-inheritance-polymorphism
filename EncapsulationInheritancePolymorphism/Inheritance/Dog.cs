@@ -22,7 +22,6 @@ namespace EncapsulationInheritancePolymorphism.Inheritance
 
         public override string Stats()
         {
-            //return $"Name: {Name}\nWeight: {Weight}\nAge: {Age}\nIs Service Dog: {IsServiceDog}";
             return base.Stats() + $"\nIs Service Dog: {IsServiceDog}";
         }
 

@@ -8,7 +8,6 @@ namespace EncapsulationInheritancePolymorphism.Inheritance
 {
     internal interface IPerson
     {
-
         public void Talk();
     }
 }

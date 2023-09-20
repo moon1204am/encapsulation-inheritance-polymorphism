@@ -8,7 +8,6 @@ namespace EncapsulationInheritancePolymorphism
     {
         static void Main(string[] args)
         {
-            //Person person = new Person();
             PersonHandler handler = new PersonHandler();
             Person newPerson;
             try
@@ -16,6 +15,33 @@ namespace EncapsulationInheritancePolymorphism
                 newPerson = handler.CreatePerson(22, "Jane", "Doe", 165, 45);
                 Console.WriteLine($"First Name: {handler.GetFName(newPerson)}\nLast Name: {handler.GetLName(newPerson)}\nAge: {handler.GetAge(newPerson)}\nHeight: {handler.GetHeight(newPerson)}\nWeight: {handler.GetWeight(newPerson)}");
             } catch(ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            /* Printing out exception messages. There are unit tests as well testing the valid and invalid persons. */
+            try
+            {
+                newPerson = handler.CreatePerson(0, "Jane", "Doe", 165, 45);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            try
+            {
+                newPerson = handler.CreatePerson(22, "J", "Doe", 165, 45);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            try
+            {
+                newPerson = handler.CreatePerson(22, "Jane", "D", 165, 45);
+            }
+            catch (ArgumentException e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -52,11 +78,7 @@ namespace EncapsulationInheritancePolymorphism
                 {
                     animalToPerson.Talk();
                 }
-                
             }
-
-            List<Dog> dogs = new List<Dog>();
-            //dogs.Add(new Horse("Camarillo.", 1000, 25, 2.47));
 
             foreach (Animal animal in animals) 
             {
@@ -97,9 +119,9 @@ namespace EncapsulationInheritancePolymorphism
             * Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng.
             * Kommer du åt den metoden från Animals listan?
             * F: Varför inte?
-            * A: För att den metoden känner enbart Dog klassen om. Animal är inte av typen Dog, men den kan castas till en Dog och då kan sen komma åt metoden.
+            * A: För att den metoden känner enbart Dog klassen och är inte en del av basklassens gränssnitt. Subklasser kan ha egna medlemmar/implementation
+            *   som inte basklassen känner till.
             */
-
         }
     }
 }

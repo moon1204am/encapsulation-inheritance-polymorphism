@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EncapsulationInheritancePolymorphism.Encapsulation
 {
+    /// <summary>
+    /// Class representing a person.
+    /// </summary>
     public class Person
     {
         private int age;
@@ -65,8 +68,5 @@ namespace EncapsulationInheritancePolymorphism.Encapsulation
             get { return weight; }
             set { weight = value; }
         }
-
-
-
     }
 }

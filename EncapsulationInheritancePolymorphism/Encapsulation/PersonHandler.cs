@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EncapsulationInheritancePolymorphism.Encapsulation
 {
+    /// <summary>
+    /// Class for incapsulating the Person class further.
+    /// </summary>
     public class PersonHandler
     {
         public Person CreatePerson(int age, string fName, string lName, double height, double weight)
